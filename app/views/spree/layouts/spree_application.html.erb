@@ -1,0 +1,362 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render partial: 'spree/shared/head' %>
+  </head>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+  
+<div id="body">
+ 
+<div style="height: 432px;" class="swipe">
+<div class="swipe-menu">
+<ul class="links">
+<li class="first"><a class="active" href="http://livedemo00.template-help.com/opencart_50870/index.php?route=common/home"><i class="fa fa-home"></i>Home</a></li>
+<li><a class=" wishlist-total" href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/wishlist"><i class="fa fa-star"></i>Wish List (0)</a></li>
+<li><a class="" href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/account"><i class="fa fa-user"></i>My Account</a></li>
+<li><a class="" href="http://livedemo00.template-help.com/opencart_50870/index.php?route=checkout/cart"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+<li><a class="" href="http://livedemo00.template-help.com/opencart_50870/index.php?route=checkout/checkout"><i class="fa fa-check"></i>Checkout</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/register"><i class="fa fa-user"></i>Create an account</a></li><li class="login_h"><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/login"><i class="fa fa-lock"></i>Login</a></li> </ul>
+<div class="box-language header-button">
+<div class="heading">en<i class="fa fa-angle-down"></i></div>
+<div class="heading1"><i class="fa fa-globe"></i>Language<i class="fa fa-angle-down"></i></div>
+<form action="http://livedemo00.template-help.com/opencart_50870/index.php?route=module/language" method="post" enctype="multipart/form-data">
+<div class="ul">
+<a title="English" onclick="$('input[name=\'language_code\']').attr('value', 'en').submit(); $(this).parent().parent().submit();"><span>en</span></a>
+<a title="German" onclick="$('input[name=\'language_code\']').attr('value', 'de').submit(); $(this).parent().parent().submit();"><span>de</span></a>
+<a title="Spanish" onclick="$('input[name=\'language_code\']').attr('value', 'es').submit(); $(this).parent().parent().submit();"><span>es</span></a>
+<input name="language_code" value="" type="hidden">
+<input name="redirect" value="http://livedemo00.template-help.com/opencart_50870/index.php?route=common/home" type="hidden">
+</div>
+</form>
+</div>
+<div class="box-currency header-button">
+<div>
+<div class="heading-1"><i class="fa fa-money"></i>Currency<i class="fa fa-angle-down"></i></div>
+<div class="heading">
+$<i class="fa fa-angle-down"></i>
+</div>
+</div>
+<form action="http://livedemo00.template-help.com/opencart_50870/index.php?route=module/currency" method="post" enctype="multipart/form-data">
+<div class="ul">
+<a title="Euro" onclick="$('input[name=\'currency_code\']').attr('value', 'EUR').submit(); $(this).parent().parent().submit();"><span>€</span></a>
+<a title="Pound Sterling" onclick="$('input[name=\'currency_code\']').attr('value', 'GBP').submit(); $(this).parent().parent().submit();"><span>£</span></a>
+<a title="US Dollar"><span class="act">$</span></a>
+<input name="currency_code" value="" type="hidden">
+<input name="redirect" value="http://livedemo00.template-help.com/opencart_50870/index.php?route=common/home" type="hidden">
+</div>
+</form>
+</div>
+<ul class="foot">
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=4">About</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=6">Delivery</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+</ul>
+<ul class="foot foot-1">
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/contact">Contact Us</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/return/insert">Returns</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/sitemap">Site Map</a></li>
+</ul>
+<ul class="foot foot-2">
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/manufacturer">Brands</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/voucher">Gift Vouchers</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=affiliate/account">Affiliates</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/special">Specials</a></li>
+</ul>
+<ul class="foot foot-3">
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/order">Order History</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/newsletter">Newsletter</a></li>
+</ul>
+</div>
+</div>
+<div id="page">
+<div id="shadow">
+<div style="height: 2101px;" class="shadow"></div>
+ 
+<header id="header">
+ 
+<div class="toprow">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="toprow__button">
+Commandez par t&eacute;l&eacute;phone! <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 01.02.03.04.05
+</div>
+<ul class="links">
+<% if spree_current_user %>
+<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <%= link_to Spree.t(:my_account), spree.account_path %></li>
+<li><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> <%= link_to Spree.t(:logout), spree.logout_path %></li>
+<% else %>
+<li id="link-to-login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <%= link_to Spree.t(:login), spree.login_path %></li>
+<% end %>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="container logo-block">
+<div class="toprow-1">
+<div class="row">
+<div class="col-sm-12">
+<a class="swipe-control" href="#"><i class="fa fa-align-justify"></i></a>
+<div class="top-search">
+<i class="fa fa-search"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+ 
+<div id="logo"><%= link_to image_tag('logo.png', title: 'La Boutique Nature', alt: 'La Boutique Nature'), root_path, class: 'logo' %></div>
+  <div class="cart-position">
+    <div class="cart-inner"><div class="" id="cart">
+      <div class="heading">
+        <span class="link_a"> 
+	  <i class="fa fa-shopping-cart"></i>
+			<b>Mon Panier:</b><br>
+			<span id='link-to-cart'>
+                          <noscript>
+                            <%= link_to Spree.t(:cart), '/cart' %>
+                          </noscript> 
+                          &nbsp;
+                          <script>Spree.fetch_cart()</script>
+                        </span>
+			<span class="clear"></span>
+		</span>
+      </div>
+      <div class="content">
+        <div class="content-scroll">
+	  <div class="empty">Your shopping cart is empty!</div>
+	  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+<div id="search">
+  <div class="inner"> 
+    <%= render :partial => 'spree/shared/search' %>
+  </div>
+</div>
+</div>
+ 
+</div>
+</div>
+<div class="container">
+<div id="menu-gadget">
+<div class="row">
+<div class="col-sm-12">
+<div id="menu-icon">Categories</div>
+<ul id="nav" class="sf-menu-phone"> <li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=57">Aromatherapy</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=20">Body &amp; Bath</a>
+</li>
+<li class="parent">
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17">Diet &amp; Nutrition</a>
+<ul>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_30">Lorem ipsum dolor sit amet </a>
+</li>
+<li class="parent">
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_72">Conse ctetur adipisicing</a>
+<ul>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_72_79">Lorem ipsum dolor</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_72_80">Sit amet</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_72_73">Incididunt ut labore</a>
+</li>
+</ul>
+<i class="fa fa-angle-down"></i></li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_28">Elit sed do eiusmod tempor</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_36">Incididunt ut labore </a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=17_35">Et dolore magna aliqua</a>
+</li>
+</ul>
+<i class="fa fa-angle-down"></i></li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=24">Grocery Products</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=25">Health concern</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=59">Minerals</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=71">Sexual health</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=75">Sport nutrition</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=76">Supplements</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=77">Tea &amp; Coffee</a>
+</li>
+<li>
+<a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/category&amp;path=78">Vitamins </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+ 
+<div style="position: relative; top: 0px;" class="nav__primary">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+
+
+<ul class="links">
+<li class="first"><%= link_to spree.root_path, class: 'active' do %><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Accueil<% end %></li>
+
+<% if spree_current_user %>
+<li><%= link_to spree.account_path do %><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mon Compte<% end %></li>
+<li><%= link_to spree.logout_path do %><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> D&eacute;connexion<% end %></li>
+<% else %>
+<li><%= link_to spree.login_path do %><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Connexion<% end %></li>
+<% end %>
+
+<li>
+  <%= link_to  '/cart' do %><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Mon Panier<% end %>
+</li>
+<li>
+<% Spree::Taxonomy.includes(root: :children).each do |taxonomy| %>  
+    
+      <%= link_to seo_url(taxonomy.root) do %><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>&nbsp; <%= taxonomy.name %><% end %>
+
+<% end %>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div><div style="position: relative; display: block; height: 0px;" class="pseudoStickyBlock"></div>
+</header>
+
+<section>
+ <div class="container">
+<div class="row" data-hook>
+<%= breadcrumbs(@taxon) %>
+<%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+<div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
+<%= flash_messages %>
+<%= yield %>
+</div>
+<%= yield :templates %>
+</div>
+</div>
+<hr>
+</section>
+ 
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+<div class="block">
+<div class="block-heading">
+Information </div>
+<div class="block-content">
+<ul>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=4">About</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=6">Delivery</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-2">
+<div class="block">
+<div class="block-heading">
+Customer Service </div>
+<div class="block-content">
+<ul>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/contact">Contact Us</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/return/insert">Returns</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=information/sitemap">Site Map</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-2">
+<div class="block">
+<div class="block-heading">
+Extras </div>
+<div class="block-content">
+<ul>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/manufacturer">Brands</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/voucher">Gift Vouchers</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=affiliate/account">Affiliates</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=product/special">Specials</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="block">
+<div class="block-heading">
+My Account </div>
+<div class="block-content">
+<ul>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/account">My Account</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/order">Order History</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/wishlist">Wish List</a></li>
+<li><a href="http://livedemo00.template-help.com/opencart_50870/index.php?route=account/newsletter">Newsletter</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-3 copyright">
+<div class="block">
+<div class="block-content">
+<div class="foot-phone">
+<div class="tx__footer">Call us now toll free:</div>
+<div>(800)2345-6789</div>
+</div>
+<ul class="social">
+<li><a data-original-title="Facebook" class="tooltip-2" title="" href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+<li><a data-original-title="Twitter" class="tooltip-2" title="" href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+<li><a data-original-title="RSS" class="tooltip-2" title="" href="#"><i class="fa fa-rss"></i></a></li>
+</ul>
+ 
+<div id="copyright">
+Powered By <a href="http://www.opencart.com">Spree</a><br> © 2015 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="catalog/view/theme/theme442/js/livesearch.js"></script>
+</div>
+</div>
+</div>
+
+
+  </body>
+</html>

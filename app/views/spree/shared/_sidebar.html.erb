@@ -1,0 +1,54 @@
+
+<aside id="sidebar" class="col-sm-4 col-md-3" data-hook>
+<% Spree::Taxonomy.includes(root: :children).each do |taxonomy| %>
+<div class="box category">
+  <div class="box-heading">
+    <%= taxonomy.name %>
+  </div>
+  <div class="box-content">
+    <div class="box-category">
+      <ul>
+        <% taxonomy.root.children.each do |taxon| %>
+        <li class="cat-header "> 
+          <%= link_to seo_url(taxon) do %>
+          <span class="glyphicon glyphicon-leaf" aria-hidden="true" style="color:#60BB44"></span>&nbsp;&nbsp;<%= taxon.name %>
+          <% end %>
+        </li>
+        <% end %>
+</ul>
+</div>
+</div>
+</div>
+<% end %>
+<div id="banner0" class="banner row">
+<div class="col-sm-4">
+<a href="index.php?route=product/product&amp;product_id=42">
+<img src="http://livedemo00.template-help.com/opencart_50870/image/cache/data/banner-aside-270x270.png" alt="banner-1" title="banner-1">
+<div class="s-desc"><h1>Free Shipping</h1>
+<h2>on orders over $99</h2>
+<p>This offer is valid on all our store items. </p></div>
+</a>
+</div>
+</div>
+
+<div class="box info">
+	<div class="box-heading">Information</div>
+	<div class="box-content">
+		
+		<ul class="info-list">
+				<li><a href="#"><i class="fa fa-angle-right "></i>About</a></li>
+				<li><a href="#"><i class="fa fa-angle-right "></i>Delivery</a></li>
+				<li><a href="#"><i class="fa fa-angle-right "></i>Privacy Policy</a></li>
+				<li><a href="#"><i class="fa fa-angle-right "></i>Terms &amp; Conditions</a></li>
+				<li><a href="#"><i class="fa fa-angle-right "></i>Contact Us</a></li>
+		<li class="last"><a href="#"><i class="fa fa-angle-right "></i>Site Map</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+</aside>

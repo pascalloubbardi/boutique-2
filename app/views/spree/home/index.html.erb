@@ -1,0 +1,88 @@
+<% content_for :sidebar do %>
+  <div data-hook="homepage_sidebar_navigation">
+    <%= render :partial => 'spree/shared/taxonomies' %>
+  </div>
+<% end %>
+
+
+
+
+<div data-hook="homepage_products">
+
+
+
+ 
+  <div class="box featured">
+    <div class="box-heading">
+     Nos Articles 
+    </div>
+</div>
+
+  <% cache(cache_key_for_products) do %>
+    <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
+  <% end %>
+
+
+ <div id="banner1" class="banner row">
+    <div class="col-sm-4">
+      <a href="index.php?route=product/product&amp;product_id=32">
+        <img src="http://livedemo00.template-help.com/opencart_50870/image/cache/data/banner1-268x268.jpg" alt="banner-1" title="banner-1">
+          <div class="s-desc">
+            <h1>  
+              <span>Herbal</span> Supplements
+            </h1>
+              <span>Shop now!</span>
+          </div>
+      </a>
+  </div>
+  <div class="col-sm-4">
+    <a href="index.php?route=product/product&amp;product_id=29">
+      <img src="http://livedemo00.template-help.com/opencart_50870/image/cache/data/banner2-268x268.jpg" alt="banner-2" title="banner-2">
+        <div class="s-desc"><h1><span>Vitamins</span></h1>
+          <span>Shop now!</span>
+        </div>
+    </a>
+  </div>
+  <div class="col-sm-4">
+    <a href="index.php?route=product/product&amp;product_id=28">
+      <img src="http://livedemo00.template-help.com/opencart_50870/image/cache/data/banner3-268x268.jpg" alt="banner-3" title="banner-3">
+        <div class="s-desc"><h1><span>Sports</span> Nutrition</h1>
+          <span>Shop now!</span></div>
+    </a>
+  </div>
+</div>
+
+
+<div class="box featured">
+<div class="box-heading">Promotions</div>
+
+</div>
+
+<div class="row text-center">
+<% @products.where('spree_variants.sale_price is not null').uniq.first(3).each do |product| %>
+<% url = spree.product_url(product, taxon_id: @taxon.try(:id)) %>
+<% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
+            <div class="col-md-4 col-sm-7 hero-feature">
+                <div class="thumbnail">
+                    <%= link_to small_image(product, itemprop: 'image'), url, itemprop: 'url' %>
+                    <div class="caption">
+                        <h3><%= display_price(product) %></h3>
+                        <p><b><%= link_to truncate(product.name, length: 50), url, itemprop: 'name', title: product.name %><b></p>
+                        
+                      <div id="container_buttons" style="margin-top:50px">
+                        <p>
+                          <%= link_to product, class: 'a_demo_four' do %><span>Voir l&acute;Article</span><% end %>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+<% end %><% end %>            
+
+        </div>
+
+
+
+</div>
+
