@@ -58,7 +58,7 @@
 		-webkit-box-shadow:0 0 6px rgba(0,0,0,.05);
 	}	
 	#content .banner a:hover{
-		box-shadow:0 0 8px rgba(0,0,0,.08);
+		box-shadow:0 0 8px #60BB44;
 		-moz-box-shadow:0 0 8px rgba(0,0,0,.08);
 		-webkit-box-shadow:0 0 8px rgba(0,0,0,.08);
 	}
